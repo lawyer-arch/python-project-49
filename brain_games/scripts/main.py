@@ -1,2 +1,2 @@
 def main():
-    brain_games
+    brain_games()
