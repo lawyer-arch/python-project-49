@@ -1,4 +1,4 @@
-setup: install
+setup: install build package-install
 
 install:
 	uv sync
@@ -6,4 +6,10 @@ install:
 brain-games:
 	uv run brain-games
 
-.PHONY: install brain-games
+build:
+	uv build
+
+package-install:
+	uv tool install dist/*.whl
+
+.PHONY: install brain-games build package-install
