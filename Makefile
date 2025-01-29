@@ -3,4 +3,7 @@ setup: install
 install:
 	uv sync
 
-.PHONY: install
+brain-games:
+	uv run brain-games
+
+.PHONY: install brain-games
