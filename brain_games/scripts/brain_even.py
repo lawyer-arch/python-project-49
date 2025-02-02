@@ -1,8 +1,8 @@
 ### Импортируем библиотеки
 from random import randint
 import sys
-### Импортируем имя user из cli.py
-from brain_games.cli import name
+import prompt
+
 
 ### Генерируем случайное члисло
 def rendom_number():
@@ -11,6 +11,12 @@ def rendom_number():
 
 ### Тело игры.
 def game_body():
+    
+    print('Welcome to the Brain Games!')
+
+    name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}!')
+
     print('Answer "yes" if the number is even, otherwise answer "no".')
     answer = ''
     i = 0
