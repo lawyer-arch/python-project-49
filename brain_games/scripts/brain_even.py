@@ -4,13 +4,14 @@ import sys
 import prompt
 
 
+
 ### Генерируем случайное члисло
 def rendom_number():
     random_number = randint(0, 100)
     return random_number
 
 ### Тело игры.
-def game_body():
+def brain_even():
     
     print('Welcome to the Brain Games!')
 
@@ -36,5 +37,11 @@ def game_body():
             sys.exit(0) 
     print(f'Congratulations, {name}!')
 
+def main():
+    brain_even()    
+
+
+if __name__ == "__main__":
+    main()
 
         
