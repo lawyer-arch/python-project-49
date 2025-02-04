@@ -8,4 +8,6 @@ Code Climate
 
 ### 
 Entry via link
-https://asciinema.org/a/ujyQb9lh1AnuJx3OkTP1os05e
+[![asciinema](https://asciinema.org/a/ujyQb9lh1AnuJx3OkTP1os05e)]
+
+[![asciinema](https://asciinema.org/a/2tnprLRVIA0UWjDucFlVbdPYa)]
