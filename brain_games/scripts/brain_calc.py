@@ -13,7 +13,6 @@ def brain_calc():
         x = rendom_number()
         y = rendom_number()
         oper = operator()
-        result = x oper y
         print(f'Question: {x} {oper} {y}')
         print('Your answer: ', end='')
         answer = input()
