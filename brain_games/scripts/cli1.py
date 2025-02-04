@@ -1,25 +1,16 @@
-
-### Импортируем библиотеки
 from random import randint, choice
-from random import randint
 import prompt
 
+# Генерируем случайное число
+def random_number():
+    return randint(0, 100)
 
-
-### Генерируем случайное члисло
-def rendom_number():
-    random_number = randint(0, 100)
-    return random_number
-
-### Генератор случайных операторов
-
-def operator():
+# Генерируем случайный оператор
+def get_operator():
     seg = ['+', '-', '*']
-    operator = random.choice(seg)
-    return operator
+    return choice(seg)
 
-### Приветствие начало игры.
-
+# Приветствие и запрос имени
 def welcome_user():    
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')

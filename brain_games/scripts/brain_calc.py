@@ -1,34 +1,32 @@
-from cli1 import welcome_user
-from cli1 import rendom_number
-from cli1 import operator
-from cli1 import name
+from brain_games.cli1 import welcome_user, random_number, get_operator
 import sys
 
 def brain_calc():
-    welcome_user()
+    name = welcome_user()  # Сохраняем имя
     print('What is the result of the expression?')
-    answer = ''
+    
     i = 0
     while i < 3:
-        x = rendom_number()
-        y = rendom_number()
-        oper = operator()
+        x = random_number()
+        y = random_number()
+        oper = get_operator()
+        
         print(f'Question: {x} {oper} {y}')
-        print('Your answer: ', end='')
-        answer = input()
-        result = eval(f"{x} {oper} {y}")
-
-        if result == answer:
+        answer = input('Your answer: ')
+        
+        result = eval(f"{x} {oper} {y}")  # Вычисляем правильный ответ
+        
+        if result == int(answer):  # Приводим ответ пользователя к числу
             print('Correct!')
             i += 1
         else:
-            print(f''''{answer}' is wrong answer ;(. Correct answer was {result}. Let's try again, {name}!''')
-            sys.exit(0) 
+            print(f"'{answer}' is wrong answer ;(. Correct answer was {result}. Let's try again, {name}!")
+            sys.exit(0)
+    
     print(f'Congratulations, {name}!')
 
 def main():
     brain_calc()    
-
 
 if __name__ == "__main__":
     main()
