@@ -19,7 +19,7 @@ def brain_progression():
         answer = input('Your answer: ')
 
         # Вводим условия сравнения ответа        
-        if mystery_variable == int(answer):  # Приводим ответ пользователя к числу
+        if int(mystery_variable) == int(answer):  # Приводим ответ пользователя к числу
             print('Correct!')
             i += 1
         else:
