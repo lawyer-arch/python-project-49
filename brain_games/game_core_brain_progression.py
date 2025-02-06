@@ -17,12 +17,12 @@ def progression():
 
 def progression_string():
     ### Создаем строку алгеброической прогресии с неизвестным элементом
-    temporary_list = list(map(str, progression()))  # Преобразуем строку в список
+    temporary_list = list(map(str, progression()))
     ind = randint(1, len(temporary_list) - 1)
+    simbol = temporary_list[ind]
     temporary_list[ind] = '..'
     temporary_string = ' '.join(temporary_list)  # Преобразуем список обратно в строку
-    print(f'Question: {temporary_string}')
-    return ind  # Возвращаем индекс
-
+    print(temporary_string)  # Выводим строку
+    return simbol  # Возвращаем символ
 
 

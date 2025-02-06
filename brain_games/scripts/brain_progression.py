@@ -7,19 +7,18 @@ import sys
 
 
 def brain_progression():
-
-    mystery_variable = progression_string() # тайная переменная
-    name = welcome_user()  # Сохраняем имя
+   
+    name = welcome_user()  # Запускаем приветствие и сохраняем имя
     print('What number is missing in the progression?')
-    
+      
     i = 0
     while i < 3:
-        ### печатаем строку с алгеброической прогрессией
-        print(progression_string)
-        ### Предлагаем ввести ответ
+        # Выводим на печать прогрессию и сохраняем тайную переменную 
+        mystery_variable = progression_string()  
+        # Предлагаем ввести ответ
         answer = input('Your answer: ')
 
-        # вводим условия сравнения ответа        
+        # Вводим условия сравнения ответа        
         if mystery_variable == int(answer):  # Приводим ответ пользователя к числу
             print('Correct!')
             i += 1
@@ -30,7 +29,6 @@ def brain_progression():
     print(f'Congratulations, {name}!')
 
 def main():
-    welcome_user()
     brain_progression()    
 
 if __name__ == "__main__":
