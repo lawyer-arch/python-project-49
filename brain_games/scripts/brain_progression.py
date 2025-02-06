@@ -1,6 +1,6 @@
                                          ###ИГРА АЛГЕБРОИЧЕСКАЯ ПРОГРЕССИЯ####
 from brain_games.cli1 import welcome_user
-from brain_games.gamea_core_brain_progression import progression_string
+from brain_games.game_core_brain_progression import progression_string
 import sys
 
 
