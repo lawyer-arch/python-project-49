@@ -22,7 +22,7 @@ def progression_string():
     simbol = temporary_list[ind]
     temporary_list[ind] = '..'
     temporary_string = ' '.join(temporary_list)  # Преобразуем список обратно в строку
-    print(temporary_string)  # Выводим строку
+    print(f'Question: {temporary_string}')  # Выводим строку с прогрессией
     return simbol  # Возвращаем символ
 
 

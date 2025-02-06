@@ -23,7 +23,7 @@ def brain_progression():
             print('Correct!')
             i += 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was {result}.\n Let's try again, {name}!")
+            print(f"'{answer}' is wrong answer ;(. Correct answer was {mystery_variable}.\n Let's try again, {name}!")
             sys.exit(0)
     
     print(f'Congratulations, {name}!')
