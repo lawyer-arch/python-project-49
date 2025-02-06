@@ -25,4 +25,4 @@ def progression_string():
     print(f'Question: {temporary_string}')  # Выводим строку с прогрессией
     return simbol  # Возвращаем символ
 
-print(progression_string())
+
