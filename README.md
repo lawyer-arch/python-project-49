@@ -13,3 +13,5 @@ Entry via link
 [second_game](https://asciinema.org/a/2tnprLRVIA0UWjDucFlVbdPYa)
 
 [brain_gcd]( https://asciinema.org/a/cT0ANeM7AlN2k7WYvntRqglwc)
+
+[brain_progression](https://asciinema.org/a/DUEsVYJU3vqpVswBXXbz3JTbs)
