@@ -16,3 +16,5 @@ Entry via link:
 [brain_gcd]( https://asciinema.org/a/cT0ANeM7AlN2k7WYvntRqglwc)
 
 [brain_progression](https://asciinema.org/a/DUEsVYJU3vqpVswBXXbz3JTbs)
+
+[brain_prime](https://asciinema.org/a/eCTMlc7aPAu8idQOqR2t3kFUO)
