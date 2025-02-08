@@ -16,15 +16,17 @@ Hexlet Code is a collection of 5 math-related games designed to challenge and im
 2. Inserting a number into an arithmetic progression
 3. Providing the result of a calculation (multiplication, addition, subtraction)
 4. Answering if a number is even
-5. Finding the greatest common divisor of two numbers
+5. Finding the greatest common divisor of two numbers  
+
 ##
 *Installation*  
 
-###To install the games, ensure you have Poetry installed on your machine, then run the following commands: make install
+### To install the games, ensure you have [poetry](https://python-poetry.org/docs/) installed on your machine, then run the following commands:  
+        `make install`
 
 ###
 *Games*  
-
+```sh
 * __To start playing, you can run the following commands:__  
     ** To play "Check if a number is prime":  
         make brain-prime
@@ -43,6 +45,7 @@ Hexlet Code is a collection of 5 math-related games designed to challenge and im
 
 _After installing the package using pip install --user, all commands can be executed without poetry run (simply brain-calc, not poetry run brain-calc)._  
     Asciinema records
+```
 
 ### 
 *Entry via link:* [brain_even](https://asciinema.org/a/ujyQb9lh1AnuJx3OkTP1os05e), [brain_calc](https://asciinema.org/a/2tnprLRVIA0UWjDucFlVbdPYa), [brain_gcd]( https://asciinema.org/a/cT0ANeM7AlN2k7WYvntRqglwc), [brain_progression](https://asciinema.org/a/DUEsVYJU3vqpVswBXXbz3JTbs), [brain_prime](https://asciinema.org/a/eCTMlc7aPAu8idQOqR2t3kFUO)
