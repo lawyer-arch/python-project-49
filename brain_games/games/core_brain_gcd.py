@@ -3,7 +3,6 @@ import sys
 import math
 
 
-
 def c_brain_gcd():
     name = welcome_user()  # Сохраняем имя
     print('Find the greatest common divisor of given numbers.')

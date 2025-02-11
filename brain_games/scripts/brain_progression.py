@@ -1,9 +1,7 @@
-                                         ###ИГРА АЛГЕБРОИЧЕСКАЯ ПРОГРЕССИЯ####
+# ИГРА АЛГЕБРОИЧЕСКАЯ ПРОГРЕССИЯ
 from brain_games.cli1 import welcome_user
 from brain_games.games.game_core_brain_progression import progression_string
 import sys
-
-
 
 
 def brain_progression():
@@ -28,8 +26,10 @@ def brain_progression():
     
     print(f'Congratulations, {name}!')
 
+
 def main():
     brain_progression()    
+
 
 if __name__ == "__main__":
     main()

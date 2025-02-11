@@ -1,19 +1,19 @@
-### Импортируем библиотеки
+# Импортируем библиотеки
 from brain_games.cli1 import welcome_user
 from random import randint
 import prompt
 import sys
 
 
-### Генерируем случайное члисло
+# Генерируем случайное члисло
 def rendom_number():
     random_number = randint(0, 100)
     return random_number
 
 
-### Проверяем натуральность числа
+# Проверяем натуральность числа
 def is_prime(x):
-    for i in range(2, (x//2)+1):
+    for i in range(2, (x // 2) + 1):
         if x % i == 0:
             return False
     return True

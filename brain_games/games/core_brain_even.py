@@ -1,16 +1,16 @@
-### Импортируем библиотеки
+# Импортируем библиотеки
 from random import randint
 import sys
 import prompt
 
 
-
-### Генерируем случайное члисло
+# Генерируем случайное члисло
 def rendom_number():
     random_number = randint(0, 100)
     return random_number
 
-### Тело игры.
+
+# Тело игры.
 def c_brain_even():
     
     print('Welcome to the Brain Games!')

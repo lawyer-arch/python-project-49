@@ -1,6 +1,7 @@
 from brain_games.cli1 import welcome_user, random_number, get_operator
 import sys
 
+
 def c_brain_calc():
     name = welcome_user()  # Сохраняем имя
     print('What is the result of the expression?')
