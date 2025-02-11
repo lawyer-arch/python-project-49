@@ -42,7 +42,7 @@ def brain_prime_start():
             print('Correct!')
             i += 1
         else:
-            print(f''''yes' is wrong answer ;(. Correct answer was 'no'. Let's try again, {name} !''')
+            print(f''''yes' is wrong answer ;(. Correct answer was 'no'.\n Let's try again, {name}!''')
             sys.exit(0)
 
     print(f'Congratulations, {name}!')
