@@ -1,12 +1,9 @@
-from brain_games.games.core_brain_calc import c_brain_calc
+from brain_games.games.core_brain_calc import RULES, game_logic_calc
+from brain_games.engine import c_brain_games
 
-
-def brain_calc():
-    c_brain_calc()
- 
 
 def main():
-    brain_calc()    
+    c_brain_games(RULES, game_logic_calc)
 
 
 if __name__ == "__main__":

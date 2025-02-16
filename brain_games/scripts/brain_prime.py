@@ -1,12 +1,9 @@
-from brain_games.games.core_brain_prime import brain_prime_start
-
-
-def brain_prime():
-    brain_prime_start()
+from brain_games.games.core_brain_prime import RULES, game_logic_prime
+from brain_games.engine import c_brain_games
 
 
 def main():
-    brain_prime()    
+    c_brain_games(RULES, game_logic_prime)
 
 
 if __name__ == "__main__":
