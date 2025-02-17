@@ -2,12 +2,11 @@
 from brain_games.worcer import is_prime, random_number, not_correct_answer_even
 
 
-#Игра "Простое число"
 # Правила игры
-RULES='Answer "yes" if given number is prime. Otherwise answer "no".'
+RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-#Тело игры
+# Тело игры
 def game_logic_prime(name):
     # Выводим на печать цифру и сохраняем ее в переменную 
     number = random_number()

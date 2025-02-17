@@ -35,13 +35,13 @@ def congratulations(name):
 
 # В играх calc, gcd в случае не корректного ответа выводит информацию об этом.
 def not_correct_answer(answer, result, name):
-   print(f"'{answer}' is wrong answer ;(. Correct answer was {result}. "
+    print(f"'{answer}' is wrong answer ;(. Correct answer was {result}. "
 f"Let's try again, {name}!")
    
 
 # В играх even, prime в случае не корректного ответа выводит информацию об этом.
 def not_correct_answer_even(name):
-   print(f"'yes' is wrong answer ;(. Correct answer was 'no'. "
+    print(f"'yes' is wrong answer ;(. Correct answer was 'no'. "
 f"Let's try again, {name}!")
    
 
@@ -53,18 +53,18 @@ def is_prime(x):
     return True
 
 
-#Создаем алгеброическу прогрессию
+# Создаем алгеброическу прогрессию
 def progression():
     d = randint(0, 10)
     a = randint(0, 100)
     result = []
-    result.append(a)  #записываем первый симвло
+    result.append(a)  # записываем первый симвло
     i = 0
     while i < 10:     
         new_row = result[i] + d  # создаем временную переменную
         result.append(new_row)  # записываем элементы прогресии
         i += 1  
-    return result  #возвращаем строку-прогрессию
+    return result  # возвращаем строку-прогрессию
 
 
 # Создаем строку алгеброической прогресии с неизвестным элементом
@@ -73,6 +73,6 @@ def progression_string():
     ind = randint(1, len(temporary_list) - 1)
     simbol = temporary_list[ind]
     temporary_list[ind] = '..'
-    temporary_string = ' '.join(temporary_list)  # Преобразуем список обратно в строку
+    temporary_string = ' '.join(temporary_list)  # Преобразуем список в строку
     print(f'Question: {temporary_string}')  # Выводим строку с прогрессией
     return simbol  # Возвращаем символ

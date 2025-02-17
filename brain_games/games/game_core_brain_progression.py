@@ -3,7 +3,7 @@ from brain_games.worcer import progression_string, not_correct_answer
 
 
 # Правила игры
-RULES='What number is missing in the progression?'
+RULES = 'What number is missing in the progression?'
 
 
 def game_logic_progression(name):

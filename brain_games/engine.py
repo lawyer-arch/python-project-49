@@ -1,6 +1,7 @@
 from brain_games.worcer import welcome_user, congratulations
 
-def c_brain_games(rules_of_the_game, game_logic_func):  # Переименовали аргумент для ясности
+
+def c_brain_games(rules_of_the_game, game_logic_func):
     name = welcome_user()  # Сохраняем имя пользователя
     print(rules_of_the_game)
 

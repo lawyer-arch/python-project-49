@@ -2,7 +2,7 @@
 from brain_games.worcer import random_number, not_correct_answer
 import math
 
-#Правила игры
+# Правила игры
 RULES = 'Find the greatest common divisor of given numbers.'
 
 

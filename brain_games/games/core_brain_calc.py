@@ -2,6 +2,7 @@ from brain_games.worcer import random_number, get_operator, user_response, not_c
 
 RULES = 'What is the result of the expression?'
 
+
 def game_logic_calc(name):  
     x = random_number()
     y = random_number()

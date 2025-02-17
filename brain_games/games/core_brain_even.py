@@ -1,8 +1,8 @@
 # Импортируем библиотеки
-from brain_games.worcer import random_number, get_operator, user_response, not_correct_answer_even
+from brain_games.worcer import random_number, user_response, not_correct_answer_even
 
 
-#Правила игры
+# Правила игры
 RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
