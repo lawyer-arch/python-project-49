@@ -1,5 +1,5 @@
 # Импортируем библиотеки
-from brain_games.worcer import rendom_number, get_operator, user_response, not_correct_answer_even
+from brain_games.worcer import random_number, get_operator, user_response, not_correct_answer_even
 
 
 #Правила игры
@@ -8,7 +8,7 @@ RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 # Тело игры.
 def game_logic_even(name):
-    number = rendom_number()
+    number = random_number()
     print(f'Question: {number}')
     answer = user_response()  # Получаем ответ пользователя
     if number % 2 == 0 and answer == 'yes':
