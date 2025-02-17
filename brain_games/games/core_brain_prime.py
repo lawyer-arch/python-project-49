@@ -12,12 +12,11 @@ def game_logic_prime(name):
     number = random_number()
     print(f'Question: {number}')
     # Предлагаем ввести ответ
-    answer = input('Your answer: ')
-        
-    if is_prime(number) == True and answer == 'yes':
-        print('Correct!')
-        return True
-    elif is_prime(number) == False and answer == 'no':
+    answer = input('Your answer: ').strip().lower()
+
+    is_number_prime = is_prime(number)    
+    # Сравниваем ответ пользователя с результатом is_prime
+    if (answer == 'yes') == is_number_prime:  
         print('Correct!')
         return True
     else:
