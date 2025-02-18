@@ -33,13 +33,15 @@ def congratulations(name):
     print(f'Congratulations, {name}!')
 
 
-# В играх calc, gcd в случае не корректного ответа выводит информацию об этом.
+# В играх calc, gcd в случае не корректного
+# ответа выводит информацию об этом.
 def not_correct_answer(answer, result, name):
     print(f"'{answer}' is wrong answer ;(. Correct answer was {result}. "
 f"Let's try again, {name}!")
    
 
-# В играх even, prime в случае не корректного ответа выводит информацию об этом.
+# В играх even, prime в случае не 
+# корректного ответа выводит информацию об этом.
 def not_correct_answer_even(name):
     print(f"'yes' is wrong answer ;(. Correct answer was 'no'. "
 f"Let's try again, {name}!")

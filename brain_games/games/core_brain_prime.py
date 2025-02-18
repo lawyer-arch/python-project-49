@@ -1,5 +1,7 @@
 # Импортируем библиотеки
-from brain_games.worcer import is_prime, random_number, not_correct_answer_even
+from brain_games.worcer import (is_prime,
+                                random_number,
+                                not_correct_answer_even)
 
 
 # Правила игры

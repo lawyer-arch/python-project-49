@@ -1,4 +1,8 @@
-from brain_games.worcer import random_number, get_operator, user_response, not_correct_answer
+from brain_games.worcer import (random_number,
+                                get_operator,
+                                user_response,
+                                not_correct_answer)
+
 
 RULES = 'What is the result of the expression?'
 
