@@ -1,4 +1,4 @@
-from brain_games.worcer import (user_response,
+from brain_games.utils import (user_response,
                                 not_correct_answer)
 from random import randint, choice
 

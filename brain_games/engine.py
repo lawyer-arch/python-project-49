@@ -1,12 +1,13 @@
-from brain_games.worcer import welcome_user, congratulations
+from brain_games.utils import welcome_user, congratulations
 
+
+NUM_OF_ROUNDS = 3
 
 def c_brain_games(rules_of_the_game, game_logic_func):
     name = welcome_user()  # Сохраняем имя пользователя
     print(rules_of_the_game)
 
-    i = 0
-    while i < 3:
+    for i in range(NUM_OF_ROUNDS):
         if game_logic_func(name):  # Вызываем переданную функцию
             i += 1
         else:

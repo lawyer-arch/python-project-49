@@ -60,14 +60,3 @@ def progression(progression_length):
         result.append(new_row)
 
     return result
-
-
-# Создаем строку алгеброической прогресии с неизвестным элементом
-def progression_string():
-    temporary_list = list(map(str, progression(10)))
-    ind = randint(1, len(temporary_list) - 1)
-    simbol = temporary_list[ind]
-    temporary_list[ind] = '..'
-    temporary_string = ' '.join(temporary_list)  # Преобразуем список в строку
-    print(f'Question: {temporary_string}')  # Выводим строку с прогрессией
-    return simbol  # Возвращаем символ

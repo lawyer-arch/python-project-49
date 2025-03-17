@@ -1,5 +1,5 @@
 # Импортируем библиотеки
-from brain_games.worcer import not_correct_answer
+from brain_games.utils import not_correct_answer
 from random import randint
 import math
 

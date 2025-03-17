@@ -1,5 +1,5 @@
 # Импортируем библиотеки
-from brain_games.worcer import (is_prime,
+from brain_games.utils import (is_prime,
                                 not_correct_answer_even)
 from random import randint
 

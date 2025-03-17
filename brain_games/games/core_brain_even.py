@@ -1,5 +1,5 @@
 # Импортируем библиотеки
-from brain_games.worcer import (user_response,
+from brain_games.utils import (user_response,
                                 not_correct_answer_even)
 from random import randint
 
