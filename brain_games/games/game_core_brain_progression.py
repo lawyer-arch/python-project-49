@@ -6,6 +6,7 @@ from random import randint
 # Правила игры
 RULES = 'What number is missing in the progression?'
 
+
 # Создаем строку алгеброической прогресии с неизвестным элементом
 def progression_string():
     temporary_list = list(map(str, making_progression(10)))
@@ -15,6 +16,7 @@ def progression_string():
     temporary_string = ' '.join(temporary_list)  # Преобразуем список в строку
     print(f'Question: {temporary_string}')  # Выводим строку с прогрессией
     return simbol  # Возвращаем символ
+
 
 def game_logic_progression(name):
     # Выводим на печать прогрессию и сохраняем тайную переменную 

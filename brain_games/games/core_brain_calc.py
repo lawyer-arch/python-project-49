@@ -10,7 +10,7 @@ RULES = 'What is the result of the expression?'
 def game_logic_calc(name):  
     x = randint(START_RANGE, LIMIT_RANGE)
     y = randint(START_RANGE, LIMIT_RANGE)
-    oper = choice(OPERATORS) # Получаем случайынй опервтор
+    oper = choice(OPERATORS)  # Получаем случайынй опервтор
     
     print(f'Question: {x} {oper} {y}')
     

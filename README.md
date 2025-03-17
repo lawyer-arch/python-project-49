@@ -47,3 +47,21 @@ _After installing the package using pip install --user, all commands can be exec
 
 ### 
 *Entry via link:* [brain_even](https://asciinema.org/a/ujyQb9lh1AnuJx3OkTP1os05e), [brain_calc](https://asciinema.org/a/2tnprLRVIA0UWjDucFlVbdPYa), [brain_gcd]( https://asciinema.org/a/cT0ANeM7AlN2k7WYvntRqglwc), [brain_progression](https://asciinema.org/a/DUEsVYJU3vqpVswBXXbz3JTbs), [brain_prime](https://asciinema.org/a/eCTMlc7aPAu8idQOqR2t3kFUO)
+
+
+## Установка зависимостей
+
+Before installing dependencies, make sure you have `uv` installed. If you don't have it, install it with:
+
+```sh
+`pipx install uv` or `pip install uv`
+```
+
+More information about `uv` can be found in the [official repository](https://github.com/astral-sh/uv).
+
+After installing uv run:
+
+```sh
+`uv venv`
+`uv pip install -r requirements.txt`
+```
