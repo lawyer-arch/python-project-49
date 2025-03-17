@@ -1,17 +1,10 @@
-from random import randint, choice
+from random import randint
 import prompt
 
 
-# Генерируем случайное число
-def random_number():
-    random_number = randint(0, 100)
-    return random_number
-
-
-# Генерируем случайный оператор
-def get_operator():
-    seg = ['+', '-', '*']
-    return choice(seg)
+START_RANGE = 0
+MIN_LIMIT_RANGE = 10
+LIMIT_RANGE = 100
 
 
 # Приветствие и запрос имени
@@ -56,22 +49,22 @@ def is_prime(x):
 
 
 # Создаем алгеброическу прогрессию
-def progression():
-    d = randint(0, 10)
-    a = randint(0, 100)
+def progression(progression_length):
+    d = randint(START_RANGE, MIN_LIMIT_RANGE)
+    a = randint(START_RANGE, LIMIT_RANGE)
     result = []
     result.append(a)  # записываем первый симвло
-    i = 0
-    while i < 10:     
+    
+    for i in range(0,progression_length):     
         new_row = result[i] + d  # создаем временную переменную
-        result.append(new_row)  # записываем элементы прогресии
-        i += 1  
-    return result  # возвращаем строку-прогрессию
+        result.append(new_row)
+
+    return result
 
 
 # Создаем строку алгеброической прогресии с неизвестным элементом
 def progression_string():
-    temporary_list = list(map(str, progression()))
+    temporary_list = list(map(str, progression(10)))
     ind = randint(1, len(temporary_list) - 1)
     simbol = temporary_list[ind]
     temporary_list[ind] = '..'

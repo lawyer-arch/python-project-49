@@ -1,16 +1,17 @@
-from brain_games.worcer import (random_number,
-                                get_operator,
-                                user_response,
+from brain_games.worcer import (user_response,
                                 not_correct_answer)
+from random import randint, choice
 
-
+OPERATORS = ('+', '-', '*')
+START_RANGE = 0
+LIMIT_RANGE = 100
 RULES = 'What is the result of the expression?'
 
 
 def game_logic_calc(name):  
-    x = random_number()
-    y = random_number()
-    oper = get_operator()
+    x = randint(START_RANGE, LIMIT_RANGE)
+    y = randint(START_RANGE, LIMIT_RANGE)
+    oper = choice(OPERATORS) # Получаем случайынй опервтор
     
     print(f'Question: {x} {oper} {y}')
     
