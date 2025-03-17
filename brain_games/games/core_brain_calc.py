@@ -1,5 +1,4 @@
-from brain_games.utils import (user_response,
-                                not_correct_answer)
+from brain_games.utils import user_response, error_output
 from random import randint, choice
 
 OPERATORS = ('+', '-', '*')
@@ -22,5 +21,5 @@ def game_logic_calc(name):
         print('Correct!')
         return True  # Ответ верный, продолжаем игру
     else:
-        not_correct_answer(answer, result, name)
+        error_output(answer, result, name)
         return False  # Ответ неверный, прерываем игру

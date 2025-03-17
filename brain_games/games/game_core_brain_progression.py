@@ -1,5 +1,5 @@
 # ИГРА АЛГЕБРОИЧЕСКАЯ ПРОГРЕССИЯ
-from brain_games.utils import not_correct_answer, progression
+from brain_games.utils import error_output, making_progression
 from random import randint
 
 
@@ -8,7 +8,7 @@ RULES = 'What number is missing in the progression?'
 
 # Создаем строку алгеброической прогресии с неизвестным элементом
 def progression_string():
-    temporary_list = list(map(str, progression(10)))
+    temporary_list = list(map(str, making_progression(10)))
     ind = randint(1, len(temporary_list) - 1)
     simbol = temporary_list[ind]
     temporary_list[ind] = '..'
@@ -27,6 +27,6 @@ def game_logic_progression(name):
         print('Correct!')
         return True
     else:
-        not_correct_answer(answer, result, name)
+        error_output(answer, result, name)
         return False  # Ответ неверный, прерываем игру
     

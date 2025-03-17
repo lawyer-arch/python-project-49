@@ -1,5 +1,5 @@
 # Импортируем библиотеки
-from brain_games.utils import not_correct_answer
+from brain_games.utils import error_output
 from random import randint
 import math
 
@@ -24,5 +24,5 @@ def game_logic_gcd(name):
         print('Correct!')
         return True
     else:
-        not_correct_answer(answer, result, name)
+        error_output(answer, result, name)
         return False  # Ответ неверный, прерываем игру

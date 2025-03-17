@@ -1,4 +1,4 @@
-from brain_games.utils import welcome_user, congratulations
+from brain_games.utils import welcome_user, conclusion_congratulations
 
 
 NUM_OF_ROUNDS = 3
@@ -13,4 +13,4 @@ def c_brain_games(rules_of_the_game, game_logic_func):
         else:
             return  # Завершаем игру при неправильном ответе
 
-    congratulations(name)
+    conclusion_congratulations(name)

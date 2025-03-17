@@ -1,6 +1,6 @@
 # Импортируем библиотеки
 from brain_games.utils import (is_prime,
-                                not_correct_answer_even)
+                                error_output_even)
 from random import randint
 
 
@@ -25,5 +25,5 @@ def game_logic_prime(name):
         print('Correct!')
         return True
     else:
-        not_correct_answer_even(name)
+        error_output_even(name)
         return False  # Ответ неверный, прерываем игру
