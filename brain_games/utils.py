@@ -22,20 +22,20 @@ def user_response():
 
 
 # Поздравление с удачным завершением игры
-def congratulations(name):
+def conclusion_congratulations(name):
     print(f'Congratulations, {name}!')
 
 
 # В играх calc, gcd в случае не корректного
 # ответа выводит информацию об этом.
-def not_correct_answer(answer, result, name):
+def error_output(answer, result, name):
     print(f"'{answer}' is wrong answer ;(. Correct answer was {result}. "
 f"Let's try again, {name}!")
    
 
 # В играх even, prime в случае не 
 # корректного ответа выводит информацию об этом.
-def not_correct_answer_even(name):
+def error_output_even(name):
     print(f"'yes' is wrong answer ;(. Correct answer was 'no'. "
 f"Let's try again, {name}!")
    
@@ -49,13 +49,13 @@ def is_prime(x):
 
 
 # Создаем алгеброическу прогрессию
-def progression(progression_length):
+def making_progression(progression_length):
     d = randint(START_RANGE, MIN_LIMIT_RANGE)
     a = randint(START_RANGE, LIMIT_RANGE)
     result = []
     result.append(a)  # записываем первый симвло
-    
-    for i in range(0,progression_length):     
+
+    for i in range(0, progression_length):     
         new_row = result[i] + d  # создаем временную переменную
         result.append(new_row)
 
