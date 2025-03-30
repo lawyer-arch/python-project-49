@@ -32,14 +32,7 @@ def error_output(answer, result, name):
     print(f"'{answer}' is wrong answer ;(. Correct answer was {result}. "
 f"Let's try again, {name}!")
    
-
-# В играх even, prime в случае не 
-# корректного ответа выводит информацию об этом.
-def error_output_even(name):
-    print(f"'yes' is wrong answer ;(. Correct answer was 'no'. "
-f"Let's try again, {name}!")
-   
-
+  
 # Проверяем натуральность числа
 def is_prime(x):
     for i in range(2, (x // 2) + 1):
