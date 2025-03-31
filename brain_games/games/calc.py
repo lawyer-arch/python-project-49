@@ -1,4 +1,3 @@
-from brain_games.utils import user_response, error_output
 from random import randint, choice
 
 OPERATORS = ('+', '-', '*')

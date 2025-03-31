@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-
-
 from brain_games.games.prime import RULES, game_logic_prime
 from brain_games.engine import c_brain_games
 
