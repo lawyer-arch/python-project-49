@@ -1,5 +1,4 @@
 # Импортируем библиотеки
-from brain_games.utils import error_output
 from random import randint
 import math
 
@@ -12,8 +11,8 @@ RULES = 'Find the greatest common divisor of given numbers.'
 
 
 def game_logic_gcd(name):
-    x = randint(START_RANGE, LIMIT_RANGE)
-    y = randint(START_RANGE, LIMIT_RANGE)
-    question = x, y          
-    correct_answer = math.gcd(x, y)  # Вычисляем правильный ответ
+    num1 = randint(START_RANGE, LIMIT_RANGE)
+    num2 = randint(START_RANGE, LIMIT_RANGE)
+    question = num1, num2          
+    correct_answer = math.gcd(num1, num2)  # Вычисляем правильный ответ
     return question, correct_answer

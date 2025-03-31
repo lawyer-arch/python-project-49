@@ -11,12 +11,12 @@ RULES = 'What number is missing in the progression?'
 
 # Создаем алгеброическу прогрессию
 def making_progression(progression_length):
-    d = randint(START_RANGE, MIN_LIMIT_RANGE)
-    a = randint(START_RANGE, LIMIT_RANGE)
+    num1 = randint(START_RANGE, MIN_LIMIT_RANGE)
+    num2 = randint(START_RANGE, LIMIT_RANGE)
     result = []
-    result.append(a)  # записываем первый симвло
+    result.append(num2)  # записываем первый симвло
     for i in range(0, progression_length):     
-        new_row = result[i] + d  # создаем временную переменную
+        new_row = result[i] + num1  # создаем временную переменную
         result.append(new_row)
     return result
 

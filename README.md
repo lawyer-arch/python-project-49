@@ -62,6 +62,5 @@ More information about `uv` can be found in the [official repository](https://gi
 After installing uv run:
 
 ```sh
-`uv venv`
-`uv pip install -r requirements.txt`
+`uv sync`
 ```

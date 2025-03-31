@@ -1,5 +1,4 @@
 # Импортируем библиотеки
-from brain_games.utils import (is_prime, error_output_even)
 from random import randint
 
 
@@ -8,6 +7,13 @@ LIMIT_RANGE = 100
 
 # Правила игры
 RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+
+def is_prime(x):
+    for i in range(2, (x // 2) + 1):
+        if x % i == 0:
+            return False
+    return True
 
 
 # Тело игры

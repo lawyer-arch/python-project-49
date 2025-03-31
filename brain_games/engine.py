@@ -1,11 +1,22 @@
-from brain_games.utils import welcome_user, conclusion_congratulations, user_response, error_output
+import prompt
 
 
 NUM_OF_ROUNDS = 3
 
+def user_response():
+    answer_user = input('Your answer: ')
+    return answer_user.lower()
+
+
+def welcome_user():    
+    print('Welcome to the Brain Games!')
+    name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}!')
+    return name
+
 
 def c_brain_games(rules_of_the_game, game_logic_func):
-    name = welcome_user()  # Сохраняем имя пользователя
+    name = welcome_user()
     print(rules_of_the_game)
     
 
@@ -16,10 +27,10 @@ def c_brain_games(rules_of_the_game, game_logic_func):
 
         if str(correct_answer) == str(answer):
             print('Correct!')
-            i += 1
-            
+                       
         else:
-            error_output(answer, correct_answer, name) # Завершаем игру при неправильном ответе
+            print(f"'{answer}' is wrong answer ;(. Correct answer was {correct_answer}. "
+            f"Let's try again, {name}!")
             return
         
-    conclusion_congratulations(name)
+    print(f'Congratulations, {name}!')
