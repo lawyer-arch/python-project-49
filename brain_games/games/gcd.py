@@ -13,6 +13,6 @@ RULES = 'Find the greatest common divisor of given numbers.'
 def game_logic_gcd():
     num1 = randint(START_RANGE, LIMIT_RANGE)
     num2 = randint(START_RANGE, LIMIT_RANGE)
-    question = f'{num1}, {num2}'
+    question = f'{num1} {num2}'
     correct_answer = math.gcd(num1, num2)  # Вычисляем правильный ответ
     return question, correct_answer
