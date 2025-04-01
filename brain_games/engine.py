@@ -32,5 +32,6 @@ def c_brain_games(rules_of_the_game, game_logic_func):
                   f'Correct answer was {correct_answer}. '
                   f'Let\'s try again, {name}!'
             )
+            return
         
     print(f'Congratulations, {name}!')
