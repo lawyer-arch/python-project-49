@@ -5,8 +5,8 @@ NUM_OF_ROUNDS = 3
 
 
 def user_response():
-    answer_user = prompt.input('Your answer: ')
-    return answer_user.lower()
+    answer = prompt('Your answer: ')
+    return answer.lower()
 
 
 def welcome_user():    

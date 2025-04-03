@@ -1,10 +1,10 @@
 from brain_games.games.even import RULES, check_even
-from brain_games.engine import calculate_operation
+from brain_games.engine import launch_brain_game
 
 
 # Старт игры.
 def main():
-   calculate_operation(RULES, check_even)
+   launch_brain_game(RULES, check_even)
     
 
 if __name__ == "__main__":
