@@ -10,7 +10,7 @@ RULES = 'What number is missing in the progression?'
 
 
 # Создаем алгеброическу прогрессию
-def making_progression(progression_length):
+def make_progression(progression_length):
     num1 = randint(START_RANGE, MIN_LIMIT_RANGE)
     num2 = randint(START_RANGE, LIMIT_RANGE)
     result = []
@@ -22,16 +22,10 @@ def making_progression(progression_length):
 
 
 # Создаем строку алгеброической прогресии с неизвестным элементом
-def progression_string():
-    temporary_list = list(map(str, making_progression(MIN_LIMIT_RANGE)))
+def get_progression_string():
+    temporary_list = list(map(str, make_progression(MIN_LIMIT_RANGE)))
     ind = randint(1, len(temporary_list) - 1)
-    simbol = temporary_list[ind]
+    correct_answer = temporary_list[ind]
     temporary_list[ind] = '..'
-    temporary_string = ' '.join(temporary_list)  # Преобразуем список в строку
-    return temporary_string, simbol  # Возвращаем символ
-
-
-def game_logic_progression():
-    question, correct_answer = progression_string()  
-    return question, correct_answer
-    
+    question = ' '.join(temporary_list)  # Преобразуем список в строку
+    return question, correct_answer  # Возвращаем строку и ответ

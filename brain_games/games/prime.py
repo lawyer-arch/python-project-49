@@ -17,10 +17,6 @@ def is_prime(x):
 
 
 # Тело игры
-def game_logic_prime():
+def prime_number_check():
     question = randint(START_RANGE, LIMIT_RANGE)
-    correct_answer = is_prime(question)    
-    if correct_answer:
-        return question, 'yes'  
-    else:
-        return question, 'no'
+    return question, "yes" if is_prime(question) else "no"

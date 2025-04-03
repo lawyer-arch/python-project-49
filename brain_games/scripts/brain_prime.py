@@ -1,9 +1,9 @@
-from brain_games.games.prime import RULES, game_logic_prime
-from brain_games.engine import c_brain_games
+from brain_games.games.prime import RULES, prime_number_check
+from brain_games.engine import calculate_operation
 
 
 def main():
-    c_brain_games(RULES, game_logic_prime)
+    calculate_operation(RULES, prime_number_check)
 
 
 if __name__ == "__main__":

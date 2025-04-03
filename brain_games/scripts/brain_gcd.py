@@ -1,9 +1,9 @@
-from brain_games.games.gcd import RULES, game_logic_gcd
-from brain_games.engine import c_brain_games
+from brain_games.games.gcd import RULES, find_the_divisor
+from brain_games.engine import calculate_operation
 
 
 def main():
-    c_brain_games(RULES, game_logic_gcd)
+    calculate_operation(RULES, find_the_divisor)
 
 
 if __name__ == "__main__":

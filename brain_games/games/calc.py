@@ -6,13 +6,22 @@ LIMIT_RANGE = 100
 RULES = 'What is the result of the expression?'
 
 
-def game_logic_calc():  
+def evaluate_expression(num1, num2, operation):
+    if operation == '+':
+        return num1 + num2
+    elif operation == '-':
+        return num1 - num2
+    else:
+        return num1 * num2
+    
+
+def calculate_operation():  
     num1 = randint(START_RANGE, LIMIT_RANGE)
     num2 = randint(START_RANGE, LIMIT_RANGE)
     operation = choice(OPERATORS)  # Получаем случайынй опервтор
     
     question = f'{num1} {operation} {num2}'
     
-    correct_answer = eval(question)  # Вычисляем правильный ответ
+    correct_answer = evaluate_expression(num1, num2, operation)  # Вычисляем правильный ответ
 
     return question, correct_answer

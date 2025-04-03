@@ -5,7 +5,7 @@ NUM_OF_ROUNDS = 3
 
 
 def user_response():
-    answer_user = input('Your answer: ')
+    answer_user = prompt.input('Your answer: ')
     return answer_user.lower()
 
 
@@ -16,7 +16,7 @@ def welcome_user():
     return name
 
 
-def c_brain_games(rules_of_the_game, game_logic_func):
+def launch_brain_game(rules_of_the_game, game_logic_func):
     name = welcome_user()
     print(rules_of_the_game)
     for i in range(NUM_OF_ROUNDS):

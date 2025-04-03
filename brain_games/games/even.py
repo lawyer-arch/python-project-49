@@ -10,7 +10,7 @@ RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 # Тело игры.
-def game_logic_even():
+def check_even():
     question = randint(START_RANGE, LIMIT_RANGE)
    
     if question % 2 == 0:

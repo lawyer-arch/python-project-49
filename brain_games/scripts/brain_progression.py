@@ -1,9 +1,9 @@
-from brain_games.games.progression import RULES, game_logic_progression
-from brain_games.engine import c_brain_games
+from brain_games.games.progression import RULES, get_progression_string
+from brain_games.engine import launch_brain_game
 
 
 def main():
-    c_brain_games(RULES, game_logic_progression)
+    launch_brain_game(RULES, get_progression_string)
 
 
 if __name__ == "__main__":

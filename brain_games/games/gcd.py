@@ -10,7 +10,7 @@ LIMIT_RANGE = 100
 RULES = 'Find the greatest common divisor of given numbers.'
 
 
-def game_logic_gcd():
+def find_the_divisor():
     num1 = randint(START_RANGE, LIMIT_RANGE)
     num2 = randint(START_RANGE, LIMIT_RANGE)
     question = f'{num1} {num2}'
