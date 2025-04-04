@@ -21,7 +21,7 @@ def launch_brain_game(rules_of_the_game, game_logic_func):
     print(rules_of_the_game)
     for i in range(NUM_OF_ROUNDS):
         question, correct_answer = game_logic_func()
-        print(f'Question: {question}')
+        print(f'Question: {question}', flush=True)
         answer = user_response()
 
         if str(correct_answer) == str(answer):
