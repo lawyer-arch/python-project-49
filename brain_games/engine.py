@@ -1,9 +1,4 @@
-from prompt_toolkit import prompt
-
-
-
 NUM_OF_ROUNDS = 3
-
 
 def user_response():
     return input('Your answer: ').lower()
@@ -11,7 +6,7 @@ def user_response():
 
 def welcome_user():    
     print('Welcome to the Brain Games!')
-    name = prompt('May I have your name? ')
+    name = input('May I have your name? ')
     print(f'Hello, {name}!')
     return name
 
@@ -21,7 +16,7 @@ def launch_brain_game(rules_of_the_game, game_logic_func):
     print(rules_of_the_game)
     for i in range(NUM_OF_ROUNDS):
         question, correct_answer = game_logic_func()
-        print(f'Question: {question}', flush=True)
+        print(f'Question: {question}')
         answer = user_response()
 
         if str(correct_answer) == str(answer):
