@@ -18,10 +18,10 @@ def evaluate_expression(num1, num2, operation):
 def calculate_operation():  
     num1 = randint(START_RANGE, LIMIT_RANGE)
     num2 = randint(START_RANGE, LIMIT_RANGE)
-    operation = choice(OPERATORS)  # Получаем случайынй опервтор
+    operation = choice(OPERATORS)
     
     question = f'{num1} {operation} {num2}'
     
-    correct_answer = evaluate_expression(num1, num2, operation)  # Вычисляем правильный ответ
+    correct_answer = evaluate_expression(num1, num2, operation)
 
     return question, correct_answer

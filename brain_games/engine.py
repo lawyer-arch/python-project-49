@@ -1,5 +1,6 @@
 NUM_OF_ROUNDS = 3
 
+
 def user_response():
     return input('Your answer: ').lower()
 
