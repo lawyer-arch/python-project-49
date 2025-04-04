@@ -5,7 +5,7 @@ description = "Mind games. Consists of five independent math games."
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "prompt>=0.4.1",
+    "prompt_toolkit>=3.0.0",
 ]
 authors = [{ name = "Pavel Anikin", email = "PavelDidko@gmail.com" }]
 
